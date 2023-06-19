@@ -16,7 +16,7 @@ build:
   merge_build_host: True  # [win]
   # skipping windows build due to no windows build for r-geiger dependency
   skip: true  # [win]
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
