@@ -1,4 +1,4 @@
-{% set version = '0.5.1' %}
+{% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,13 +10,13 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/hillR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/hillR/hillR_{{ version }}.tar.gz
-  sha256: 36adecac41c0476af81d253bf5adf97e4f33cf634579a78c336322f1ff70e27b
+  sha256: ec15c4eec265812b8d91ca93694d9ba06e7f4c3836be26351a7709bb72f4843d
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   # skipping windows build due to no windows build for r-geiger dependency
   skip: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,8 +50,7 @@ test:
 about:
   home: https://github.com/daijiang/hillR
   license: MIT
-  summary: Calculate taxonomic, functional and phylogenetic diversity measures through Hill Numbers
-    proposed by Chao, Chiu and Jost (2014) <doi:10.1146/annurev-ecolsys-120213-091540>.
+  summary: Calculate taxonomic, functional and phylogenetic diversity measures through Hill Numbers proposed by Chao, Chiu and Jost (2014) <doi:10.1146/annurev-ecolsys-120213-091540>.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
