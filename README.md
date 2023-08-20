@@ -3,6 +3,7 @@ About r-hillr-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-hillr-feedstock/blob/main/LICENSE.txt)
 
+
 About r-hillr
 -------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/daijiang/hillR
 Package license: MIT
 
 Summary: Calculate taxonomic, functional and phylogenetic diversity measures through Hill Numbers proposed by Chao, Chiu and Jost (2014) <doi:10.1146/annurev-ecolsys-120213-091540>.
+
 About r-hillr
 -------------
 
